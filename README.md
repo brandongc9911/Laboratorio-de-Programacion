@@ -1,4 +1,4 @@
-# Laboratorio de Programacion | Nocturno
+# Laboratorio de Programacion
 
 # Bienvenidos a nuestro      Repositorio
 
