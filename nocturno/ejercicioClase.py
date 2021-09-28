@@ -19,8 +19,6 @@ def generadorContraseña():
 
 
 
-
-
 contrasena = generadorContraseña()
 print(contrasena)
 

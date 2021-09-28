@@ -6,7 +6,7 @@ var edad1 = 18
 const edad2 = 18
 
 edad1 = 20
-edad2 = 20
+// edad2 = 20
 
 console.log(edad1)
 console.log(edad2)
@@ -89,11 +89,8 @@ const producto = {
     so: '11'
 }
 
-const producto2 = {
-    nombre: 'Laptop',
-    precio: 20000,
-    memororia: '1tb',
-    so: '11'
+const hp = {
+    garantia: 5
 }
 
 // Cuando trabajamos con objetos si el objeto se declara con const aun se puede modificar, hay metodos que nos ayudar a obligarlo a no cambiar
@@ -115,9 +112,16 @@ const producto2 = {
 
 
 
-var res = Object.assign(producto,producto2)
+// var res = Object.assign(producto,hp)
 
-console.table(res)
+// console.log(res)
+
+lista1 = [1,2,3,4,5]
+lista2 = [6,7,8,9,10]
+
+
+var coleccion = [...lista1,...lista2]
+console.log(coleccion)
 
 
 
