@@ -23,9 +23,14 @@ print(__name__)
 
 if __name__ == '__main__':
     contra = crearContrasena()
-    print(f'Esta es tu nueva {contra}')
-else:
-    print('Este es un archivo importado')
+    nombre = str(input('Tu contra'))
+
+    with open('sabatino/manejoArchivos/contrasenas.txt','a',encoding="utf-8") as data:
+        data.write(nombre + ': ' + contra)
+        data.write("\n")
+
+
+
 
 
 

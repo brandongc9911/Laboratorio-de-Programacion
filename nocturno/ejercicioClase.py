@@ -18,10 +18,15 @@ def generadorContraseña():
     return guardar
 
 
+def guardar(data):
+    with open("contraseñas.txt","a",encoding="utf-8") as f:
+        f.write('Contraseña: ' + data)
+        f.write("\n")
+        f.close()
 
-contrasena = generadorContraseña()
-print(contrasena)
 
-# if  __name__== '__main__':
-#     contrasena = generadorContraseña()
-#     print(contrasena)
+if __name__ == '__main__':
+    contraseña = generadorContraseña()
+    guardar(contraseña)
+    
+

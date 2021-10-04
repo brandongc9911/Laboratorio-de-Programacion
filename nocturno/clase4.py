@@ -21,7 +21,7 @@ def generadorContrasena():
 
 def guardar(contrasena):
     nombre = input(str('Para que utilizaras esta contraseña: '))
-    with open('nocturno/contraseñas.txt','a',encoding='utf-8') as data:
+    with open('nocturno/contrasenas.txt','a',encoding='utf-8') as data:
         data.write(f'{nombre}: {contrasena}')
         data.write('\n')
         data.close()
